@@ -6,14 +6,14 @@ Worked examples for the CEOS Capabilities API, the public read-only API behind t
 | Example | Open |
 |---|---|
 | **Hello, MIM API** — download the identifier registry, count canonical entities by type, pull missions and instruments into pandas, plot a launch timeline. Start here. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/hello-mim-api.ipynb) · [notebook](hello-mim-api.ipynb) |
-| **CEOS Database and WMO OSCAR/Space, side by side** — resolve any mission name to its canonical identifier, follow the record's OSCAR id to the matching OSCAR/Space satellite, and compare dates, status, orbit and payload field by field, with every match and normalisation explained. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/oscar-comparison.ipynb) · [notebook](oscar-comparison.ipynb) |
+| **CEOS Database and WMO OSCAR/Space, side by side** — resolve any mission name to its canonical identifier, follow the record's OSCAR id to the matching OSCAR/Space satellite, and compare dates, status, orbit and payload field by field, with a lifetime chart, a mission picker over the canonical list, optional CSV export, and every match and normalisation explained. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/oscar-comparison.ipynb) · [notebook](oscar-comparison.ipynb) |
 
 ## Running
 
 - **Colab:** click the badge; no installation. The first cell sets `BASE_URL`
   (`https://ceos-capabilities.org/api`) and reads an optional API key from the
   `EOGOS_API_KEY` environment variable.
-- **Locally:** `pip install pandas matplotlib requests jupyter`, then open the
+- **Locally:** `pip install pandas matplotlib requests jupyter ipywidgets jinja2`, then open the
   notebook. Python 3.10 or later.
 
 ## API access
