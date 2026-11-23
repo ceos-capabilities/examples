@@ -26,6 +26,6 @@ https://ceos-capabilities.org/api · interactive docs: https://ceos-capabilities
 
 ## Licence
 
-Code in this repository: [MIT](LICENSE). The data the examples fetch is from the
+Code in this repository: [Apache 2.0](LICENSE), the CEOS standard licence for software. The data the examples fetch is from the
 CEOS MIM Database, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/);
 cite "CEOS MIM Database (https://ceos-capabilities.org)" where you publish results.
