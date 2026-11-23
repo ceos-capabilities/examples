@@ -6,6 +6,7 @@ Worked examples for the CEOS Capabilities API, the public read-only API behind t
 | Example | Open |
 |---|---|
 | **Hello, MIM API** — download the identifier registry, count canonical entities by type, pull missions and instruments into pandas, plot a launch timeline. Start here. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/hello-mim-api.ipynb) · [notebook](hello-mim-api.ipynb) |
+| **Hello, `ceos-capabilities`** — the Python client (`pip install ceos-capabilities`): the whole database as tables with no key and no network, a mission by any of its names, a series timeline, SAR imaging modes, then the same calls against the live API. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/hello-ceos-capabilities.ipynb) · [notebook](hello-ceos-capabilities.ipynb) |
 
 ## Running
 
@@ -14,6 +15,10 @@ Worked examples for the CEOS Capabilities API, the public read-only API behind t
   `EOGOS_API_KEY` environment variable.
 - **Locally:** `pip install pandas matplotlib requests jupyter`, then open the
   notebook. Python 3.10 or later.
+- **The Python client notebook** installs the client in its first cell
+  ([`ceos-capabilities` on PyPI](https://pypi.org/project/ceos-capabilities/),
+  Python 3.9 or later) and needs no key. It reads a snapshot of the database
+  shipped inside the package, and calls the API only in its last section.
 
 ## API access
 
