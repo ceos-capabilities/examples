@@ -7,13 +7,14 @@ Worked examples for the CEOS Capabilities API, the public read-only API behind t
 |---|---|
 | **Hello, MIM API** — download the identifier registry, count canonical entities by type, pull missions and instruments into pandas, plot a launch timeline. Start here. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/hello-mim-api.ipynb) · [notebook](hello-mim-api.ipynb) |
 | **Hello, `ceos-capabilities`** — the Python client (`pip install ceos-capabilities`): the whole database as tables with no key and no network, a mission by any of its names, a series timeline, SAR imaging modes, then the same calls against the live API. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/hello-ceos-capabilities.ipynb) · [notebook](hello-ceos-capabilities.ipynb) |
+| **CEOS Database and WMO OSCAR/Space, side by side** — resolve any mission name to its canonical identifier, follow the record's OSCAR id to the matching OSCAR/Space satellite, and compare dates, status, orbit and payload field by field, with a lifetime chart, a mission picker over the canonical list, optional CSV export, and every match and normalisation explained. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ceos-capabilities/examples/blob/main/oscar-comparison.ipynb) · [notebook](oscar-comparison.ipynb) |
 
 ## Running
 
 - **Colab:** click the badge; no installation. The first cell sets `BASE_URL`
   (`https://ceos-capabilities.org/api`) and reads an optional API key from the
   `EOGOS_API_KEY` environment variable.
-- **Locally:** `pip install pandas matplotlib requests jupyter`, then open the
+- **Locally:** `pip install pandas matplotlib requests jupyter ipywidgets jinja2`, then open the
   notebook. Python 3.10 or later.
 - **The Python client notebook** installs the client in its first cell
   ([`ceos-capabilities` on PyPI](https://pypi.org/project/ceos-capabilities/),
@@ -34,3 +35,5 @@ https://ceos-capabilities.org/api · interactive docs: https://ceos-capabilities
 Code in this repository: [Apache 2.0](LICENSE), the CEOS standard licence for software. The data the examples fetch is from the
 CEOS MIM Database, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/);
 cite "CEOS MIM Database (https://ceos-capabilities.org)" where you publish results.
+The OSCAR comparison notebook also reads WMO OSCAR/Space (https://space.oscar.wmo.int),
+© World Meteorological Organization; see the notebook for the terms that apply to it.
